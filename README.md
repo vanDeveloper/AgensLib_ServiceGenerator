@@ -11,24 +11,24 @@ Those classes will be structured as:
 	AgensLib
 	├── entities
 	├── network 
-	│	└─── backend
-	│		 └──── ServiceBackend.java
-	│ 	└─── error
-	│	     └──── Error.java
+	│   └─── backend
+	│	 └──── ServiceBackend.java
+	│   └─── error
+	│	 └──── Error.java
 	├─────── services
-	│	     ├──── Api.java
-	│	     ├──── ServiceConfig.java
-	│	     ├──── ServiceRequest.java
-	│	     ├──── WebService1
-	│	     │	   ├──── WebService1Dao.java
-	│	     │	   ├──── WebService1DaoImpl.java
-	│	     │	   ├──── WebService1Interactor.java
-	│	     │	   ├──── WebService1Request.java
-	│	     │	   └──── WebService1Response.java
-	│	     ├──── WebService2
-	│	     │	   └──── ...
-	│	     ├──── WebServiceN 
-			   	   └──── ... 
+	│	 ├──── Api.java
+	│	 ├──── ServiceConfig.java
+	│	 ├──── ServiceRequest.java
+	│	 ├──── WebService1
+	│	 │     ├──── WebService1Dao.java
+	│	 │     ├──── WebService1DaoImpl.java
+	│	 │     ├──── WebService1Interactor.java
+	│	 │     ├──── WebService1Request.java
+	│	 │     └──── WebService1Response.java
+	│	 ├──── WebService2
+	│	 │     └──── ...
+	│	 ├──── WebServiceN 
+		       └──── ... 
 
 ---
 
@@ -39,7 +39,6 @@ Those classes will be structured as:
 	- Apache Maven 3.6.2 
 	- Java version 11.0.5+
 	
-
 You can test your system if you have correctly maven installed with java typing: 
 ``` shell 
 $ mvn --version
@@ -63,7 +62,7 @@ $ cd agenslib_servicegenerator
 ```
 You will see the next folders and files: 
 
-	- AgensLib: It will contain a Android app basic template. 
+ 	- AgensLib: It will contain a Android app basic template. 
 	- AgensLib.app: The executable Beta platform to generate the java classes. 
 	- AgensLibApp: The source code of the Mac bundle.
 	
