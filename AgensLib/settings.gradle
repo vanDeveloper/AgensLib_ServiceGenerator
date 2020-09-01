@@ -1,0 +1,3 @@
+include ':agenslib'
+include ':app'
+rootProject.name = "AgensLib"

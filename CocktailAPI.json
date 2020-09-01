@@ -1,0 +1,1881 @@
+{
+	"info": {
+		"_postman_id": "ff23df79-a574-4cac-b9a6-f38008405964",
+		"name": "CocktailAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAlcoholicFilters",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-rapidapi-host",
+						"value": "the-cocktail-db.p.rapidapi.com",
+						"type": "text"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://the-cocktail-db.p.rapidapi.com/list.php?a=list",
+					"protocol": "https",
+					"host": [
+						"the-cocktail-db",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"list.php"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "list"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetAlcoholicFiltersResponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-rapidapi-host",
+								"value": "the-cocktail-db.p.rapidapi.com",
+								"type": "text"
+							},
+							{
+								"key": "x-rapidapi-key",
+								"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://the-cocktail-db.p.rapidapi.com/list.php?a=list",
+							"protocol": "https",
+							"host": [
+								"the-cocktail-db",
+								"p",
+								"rapidapi",
+								"com"
+							],
+							"path": [
+								"list.php"
+							],
+							"query": [
+								{
+									"key": "a",
+									"value": "list"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "5a3050ae79dfe0a2-IAD"
+						},
+						{
+							"key": "cf-request-id",
+							"value": "035210c10f0000e0a22b33c200000001"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jun 2020 01:35:31 GMT"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "RapidAPI-1.1.13"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cfduid=d1e026134c6e51aa15c9c861de10cdf3f1592098531; expires=Tue, 14-Jul-20 01:35:31 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; SameSite=Lax; Secure"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.0.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-RapidAPI-Region",
+							"value": "AWS - us-east-1"
+						},
+						{
+							"key": "X-RapidAPI-Version",
+							"value": "1.1.13"
+						},
+						{
+							"key": "Content-Length",
+							"value": "67"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"drinks\": [\n        {\n            \"strAlcoholic\": \"Alcoholic\"\n        },\n        {\n            \"strAlcoholic\": \"Non alcoholic\"\n        },\n        {\n            \"strAlcoholic\": \"Optional alcohol\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetIngredients",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-rapidapi-host",
+						"value": "the-cocktail-db.p.rapidapi.com",
+						"type": "text"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://the-cocktail-db.p.rapidapi.com/list.php?i=list",
+					"protocol": "https",
+					"host": [
+						"the-cocktail-db",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"list.php"
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "list"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetIngredientsResponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-rapidapi-host",
+								"value": "the-cocktail-db.p.rapidapi.com",
+								"type": "text"
+							},
+							{
+								"key": "x-rapidapi-key",
+								"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://the-cocktail-db.p.rapidapi.com/list.php?i=list",
+							"protocol": "https",
+							"host": [
+								"the-cocktail-db",
+								"p",
+								"rapidapi",
+								"com"
+							],
+							"path": [
+								"list.php"
+							],
+							"query": [
+								{
+									"key": "i",
+									"value": "list"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "5a3051f7a8840300-IAD"
+						},
+						{
+							"key": "cf-request-id",
+							"value": "0352118ec900000300ce20f200000001"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jun 2020 01:36:24 GMT"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "RapidAPI-1.1.13"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cfduid=dc5d9a7b550826d18da3440c105e215c91592098584; expires=Tue, 14-Jul-20 01:36:24 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; SameSite=Lax; Secure"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.0.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-RapidAPI-Region",
+							"value": "AWS - us-east-1"
+						},
+						{
+							"key": "X-RapidAPI-Version",
+							"value": "1.1.13"
+						},
+						{
+							"key": "Content-Length",
+							"value": "710"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"drinks\": [\n        {\n            \"strIngredient1\": \"Light rum\"\n        },\n        {\n            \"strIngredient1\": \"Applejack\"\n        },\n        {\n            \"strIngredient1\": \"Gin\"\n        },\n        {\n            \"strIngredient1\": \"Dark rum\"\n        },\n        {\n            \"strIngredient1\": \"Sweet Vermouth\"\n        },\n        {\n            \"strIngredient1\": \"Strawberry schnapps\"\n        },\n        {\n            \"strIngredient1\": \"Scotch\"\n        },\n        {\n            \"strIngredient1\": \"Apricot brandy\"\n        },\n        {\n            \"strIngredient1\": \"Triple sec\"\n        },\n        {\n            \"strIngredient1\": \"Southern Comfort\"\n        },\n        {\n            \"strIngredient1\": \"Orange bitters\"\n        },\n        {\n            \"strIngredient1\": \"Brandy\"\n        },\n        {\n            \"strIngredient1\": \"Lemon vodka\"\n        },\n        {\n            \"strIngredient1\": \"Blended whiskey\"\n        },\n        {\n            \"strIngredient1\": \"Dry Vermouth\"\n        },\n        {\n            \"strIngredient1\": \"Amaretto\"\n        },\n        {\n            \"strIngredient1\": \"Tea\"\n        },\n        {\n            \"strIngredient1\": \"Champagne\"\n        },\n        {\n            \"strIngredient1\": \"Coffee liqueur\"\n        },\n        {\n            \"strIngredient1\": \"Bourbon\"\n        },\n        {\n            \"strIngredient1\": \"Tequila\"\n        },\n        {\n            \"strIngredient1\": \"Vodka\"\n        },\n        {\n            \"strIngredient1\": \"Añejo rum\"\n        },\n        {\n            \"strIngredient1\": \"Bitters\"\n        },\n        {\n            \"strIngredient1\": \"Sugar\"\n        },\n        {\n            \"strIngredient1\": \"Kahlua\"\n        },\n        {\n            \"strIngredient1\": \"demerara Sugar\"\n        },\n        {\n            \"strIngredient1\": \"Dubonnet Rouge\"\n        },\n        {\n            \"strIngredient1\": \"Lime juice\"\n        },\n        {\n            \"strIngredient1\": \"Irish whiskey\"\n        },\n        {\n            \"strIngredient1\": \"Apple brandy\"\n        },\n        {\n            \"strIngredient1\": \"Carbonated water\"\n        },\n        {\n            \"strIngredient1\": \"Cherry brandy\"\n        },\n        {\n            \"strIngredient1\": \"Creme de Cacao\"\n        },\n        {\n            \"strIngredient1\": \"Grenadine\"\n        },\n        {\n            \"strIngredient1\": \"Port\"\n        },\n        {\n            \"strIngredient1\": \"Coffee brandy\"\n        },\n        {\n            \"strIngredient1\": \"Red wine\"\n        },\n        {\n            \"strIngredient1\": \"Rum\"\n        },\n        {\n            \"strIngredient1\": \"Grapefruit juice\"\n        },\n        {\n            \"strIngredient1\": \"Ricard\"\n        },\n        {\n            \"strIngredient1\": \"Sherry\"\n        },\n        {\n            \"strIngredient1\": \"Cognac\"\n        },\n        {\n            \"strIngredient1\": \"Sloe gin\"\n        },\n        {\n            \"strIngredient1\": \"Apple juice\"\n        },\n        {\n            \"strIngredient1\": \"Pineapple juice\"\n        },\n        {\n            \"strIngredient1\": \"Lemon juice\"\n        },\n        {\n            \"strIngredient1\": \"Sugar syrup\"\n        },\n        {\n            \"strIngredient1\": \"Milk\"\n        },\n        {\n            \"strIngredient1\": \"Strawberries\"\n        },\n        {\n            \"strIngredient1\": \"Chocolate syrup\"\n        },\n        {\n            \"strIngredient1\": \"Yoghurt\"\n        },\n        {\n            \"strIngredient1\": \"Mango\"\n        },\n        {\n            \"strIngredient1\": \"Ginger\"\n        },\n        {\n            \"strIngredient1\": \"Lime\"\n        },\n        {\n            \"strIngredient1\": \"Cantaloupe\"\n        },\n        {\n            \"strIngredient1\": \"Berries\"\n        },\n        {\n            \"strIngredient1\": \"Grapes\"\n        },\n        {\n            \"strIngredient1\": \"Kiwi\"\n        },\n        {\n            \"strIngredient1\": \"Tomato juice\"\n        },\n        {\n            \"strIngredient1\": \"Cocoa powder\"\n        },\n        {\n            \"strIngredient1\": \"Chocolate\"\n        },\n        {\n            \"strIngredient1\": \"Heavy cream\"\n        },\n        {\n            \"strIngredient1\": \"Galliano\"\n        },\n        {\n            \"strIngredient1\": \"Peach Vodka\"\n        },\n        {\n            \"strIngredient1\": \"Ouzo\"\n        },\n        {\n            \"strIngredient1\": \"Coffee\"\n        },\n        {\n            \"strIngredient1\": \"Spiced rum\"\n        },\n        {\n            \"strIngredient1\": \"Water\"\n        },\n        {\n            \"strIngredient1\": \"Espresso\"\n        },\n        {\n            \"strIngredient1\": \"Angelica root\"\n        },\n        {\n            \"strIngredient1\": \"Orange\"\n        },\n        {\n            \"strIngredient1\": \"Cranberries\"\n        },\n        {\n            \"strIngredient1\": \"Johnnie Walker\"\n        },\n        {\n            \"strIngredient1\": \"Apple cider\"\n        },\n        {\n            \"strIngredient1\": \"Everclear\"\n        },\n        {\n            \"strIngredient1\": \"Cranberry juice\"\n        },\n        {\n            \"strIngredient1\": \"Egg yolk\"\n        },\n        {\n            \"strIngredient1\": \"Egg\"\n        },\n        {\n            \"strIngredient1\": \"Grape juice\"\n        },\n        {\n            \"strIngredient1\": \"Peach nectar\"\n        },\n        {\n            \"strIngredient1\": \"Lemon\"\n        },\n        {\n            \"strIngredient1\": \"Firewater\"\n        },\n        {\n            \"strIngredient1\": \"Lemonade\"\n        },\n        {\n            \"strIngredient1\": \"Lager\"\n        },\n        {\n            \"strIngredient1\": \"Whiskey\"\n        },\n        {\n            \"strIngredient1\": \"Absolut Citron\"\n        },\n        {\n            \"strIngredient1\": \"Pisco\"\n        },\n        {\n            \"strIngredient1\": \"Irish cream\"\n        },\n        {\n            \"strIngredient1\": \"Ale\"\n        },\n        {\n            \"strIngredient1\": \"Chocolate liqueur\"\n        },\n        {\n            \"strIngredient1\": \"Midori melon liqueur\"\n        },\n        {\n            \"strIngredient1\": \"Sambuca\"\n        },\n        {\n            \"strIngredient1\": \"Cider\"\n        },\n        {\n            \"strIngredient1\": \"Sprite\"\n        },\n        {\n            \"strIngredient1\": \"7-Up\"\n        },\n        {\n            \"strIngredient1\": \"Blackberry brandy\"\n        },\n        {\n            \"strIngredient1\": \"Peppermint schnapps\"\n        },\n        {\n            \"strIngredient1\": \"Creme de Cassis\"\n        },\n        {\n            \"strIngredient1\": \"Jack Daniels\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "GetIngredientsResponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-rapidapi-host",
+								"value": "the-cocktail-db.p.rapidapi.com",
+								"type": "text"
+							},
+							{
+								"key": "x-rapidapi-key",
+								"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://the-cocktail-db.p.rapidapi.com/list.php?i=list",
+							"protocol": "https",
+							"host": [
+								"the-cocktail-db",
+								"p",
+								"rapidapi",
+								"com"
+							],
+							"path": [
+								"list.php"
+							],
+							"query": [
+								{
+									"key": "i",
+									"value": "list"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "5a3051a9398d740d-IAD"
+						},
+						{
+							"key": "cf-request-id",
+							"value": "0352115dc40000740db5a38200000001"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jun 2020 01:36:11 GMT"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "RapidAPI-1.1.13"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cfduid=d673218525aca75fd1546fd9c96149b861592098571; expires=Tue, 14-Jul-20 01:36:11 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; SameSite=Lax; Secure"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.0.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-RapidAPI-Region",
+							"value": "AWS - us-east-1"
+						},
+						{
+							"key": "X-RapidAPI-Version",
+							"value": "1.1.13"
+						},
+						{
+							"key": "Content-Length",
+							"value": "710"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"drinks\": [\n        {\n            \"strIngredient1\": \"Light rum\"\n        },\n        {\n            \"strIngredient1\": \"Applejack\"\n        },\n        {\n            \"strIngredient1\": \"Gin\"\n        },\n        {\n            \"strIngredient1\": \"Dark rum\"\n        },\n        {\n            \"strIngredient1\": \"Sweet Vermouth\"\n        },\n        {\n            \"strIngredient1\": \"Strawberry schnapps\"\n        },\n        {\n            \"strIngredient1\": \"Scotch\"\n        },\n        {\n            \"strIngredient1\": \"Apricot brandy\"\n        },\n        {\n            \"strIngredient1\": \"Triple sec\"\n        },\n        {\n            \"strIngredient1\": \"Southern Comfort\"\n        },\n        {\n            \"strIngredient1\": \"Orange bitters\"\n        },\n        {\n            \"strIngredient1\": \"Brandy\"\n        },\n        {\n            \"strIngredient1\": \"Lemon vodka\"\n        },\n        {\n            \"strIngredient1\": \"Blended whiskey\"\n        },\n        {\n            \"strIngredient1\": \"Dry Vermouth\"\n        },\n        {\n            \"strIngredient1\": \"Amaretto\"\n        },\n        {\n            \"strIngredient1\": \"Tea\"\n        },\n        {\n            \"strIngredient1\": \"Champagne\"\n        },\n        {\n            \"strIngredient1\": \"Coffee liqueur\"\n        },\n        {\n            \"strIngredient1\": \"Bourbon\"\n        },\n        {\n            \"strIngredient1\": \"Tequila\"\n        },\n        {\n            \"strIngredient1\": \"Vodka\"\n        },\n        {\n            \"strIngredient1\": \"Añejo rum\"\n        },\n        {\n            \"strIngredient1\": \"Bitters\"\n        },\n        {\n            \"strIngredient1\": \"Sugar\"\n        },\n        {\n            \"strIngredient1\": \"Kahlua\"\n        },\n        {\n            \"strIngredient1\": \"demerara Sugar\"\n        },\n        {\n            \"strIngredient1\": \"Dubonnet Rouge\"\n        },\n        {\n            \"strIngredient1\": \"Lime juice\"\n        },\n        {\n            \"strIngredient1\": \"Irish whiskey\"\n        },\n        {\n            \"strIngredient1\": \"Apple brandy\"\n        },\n        {\n            \"strIngredient1\": \"Carbonated water\"\n        },\n        {\n            \"strIngredient1\": \"Cherry brandy\"\n        },\n        {\n            \"strIngredient1\": \"Creme de Cacao\"\n        },\n        {\n            \"strIngredient1\": \"Grenadine\"\n        },\n        {\n            \"strIngredient1\": \"Port\"\n        },\n        {\n            \"strIngredient1\": \"Coffee brandy\"\n        },\n        {\n            \"strIngredient1\": \"Red wine\"\n        },\n        {\n            \"strIngredient1\": \"Rum\"\n        },\n        {\n            \"strIngredient1\": \"Grapefruit juice\"\n        },\n        {\n            \"strIngredient1\": \"Ricard\"\n        },\n        {\n            \"strIngredient1\": \"Sherry\"\n        },\n        {\n            \"strIngredient1\": \"Cognac\"\n        },\n        {\n            \"strIngredient1\": \"Sloe gin\"\n        },\n        {\n            \"strIngredient1\": \"Apple juice\"\n        },\n        {\n            \"strIngredient1\": \"Pineapple juice\"\n        },\n        {\n            \"strIngredient1\": \"Lemon juice\"\n        },\n        {\n            \"strIngredient1\": \"Sugar syrup\"\n        },\n        {\n            \"strIngredient1\": \"Milk\"\n        },\n        {\n            \"strIngredient1\": \"Strawberries\"\n        },\n        {\n            \"strIngredient1\": \"Chocolate syrup\"\n        },\n        {\n            \"strIngredient1\": \"Yoghurt\"\n        },\n        {\n            \"strIngredient1\": \"Mango\"\n        },\n        {\n            \"strIngredient1\": \"Ginger\"\n        },\n        {\n            \"strIngredient1\": \"Lime\"\n        },\n        {\n            \"strIngredient1\": \"Cantaloupe\"\n        },\n        {\n            \"strIngredient1\": \"Berries\"\n        },\n        {\n            \"strIngredient1\": \"Grapes\"\n        },\n        {\n            \"strIngredient1\": \"Kiwi\"\n        },\n        {\n            \"strIngredient1\": \"Tomato juice\"\n        },\n        {\n            \"strIngredient1\": \"Cocoa powder\"\n        },\n        {\n            \"strIngredient1\": \"Chocolate\"\n        },\n        {\n            \"strIngredient1\": \"Heavy cream\"\n        },\n        {\n            \"strIngredient1\": \"Galliano\"\n        },\n        {\n            \"strIngredient1\": \"Peach Vodka\"\n        },\n        {\n            \"strIngredient1\": \"Ouzo\"\n        },\n        {\n            \"strIngredient1\": \"Coffee\"\n        },\n        {\n            \"strIngredient1\": \"Spiced rum\"\n        },\n        {\n            \"strIngredient1\": \"Water\"\n        },\n        {\n            \"strIngredient1\": \"Espresso\"\n        },\n        {\n            \"strIngredient1\": \"Angelica root\"\n        },\n        {\n            \"strIngredient1\": \"Orange\"\n        },\n        {\n            \"strIngredient1\": \"Cranberries\"\n        },\n        {\n            \"strIngredient1\": \"Johnnie Walker\"\n        },\n        {\n            \"strIngredient1\": \"Apple cider\"\n        },\n        {\n            \"strIngredient1\": \"Everclear\"\n        },\n        {\n            \"strIngredient1\": \"Cranberry juice\"\n        },\n        {\n            \"strIngredient1\": \"Egg yolk\"\n        },\n        {\n            \"strIngredient1\": \"Egg\"\n        },\n        {\n            \"strIngredient1\": \"Grape juice\"\n        },\n        {\n            \"strIngredient1\": \"Peach nectar\"\n        },\n        {\n            \"strIngredient1\": \"Lemon\"\n        },\n        {\n            \"strIngredient1\": \"Firewater\"\n        },\n        {\n            \"strIngredient1\": \"Lemonade\"\n        },\n        {\n            \"strIngredient1\": \"Lager\"\n        },\n        {\n            \"strIngredient1\": \"Whiskey\"\n        },\n        {\n            \"strIngredient1\": \"Absolut Citron\"\n        },\n        {\n            \"strIngredient1\": \"Pisco\"\n        },\n        {\n            \"strIngredient1\": \"Irish cream\"\n        },\n        {\n            \"strIngredient1\": \"Ale\"\n        },\n        {\n            \"strIngredient1\": \"Chocolate liqueur\"\n        },\n        {\n            \"strIngredient1\": \"Midori melon liqueur\"\n        },\n        {\n            \"strIngredient1\": \"Sambuca\"\n        },\n        {\n            \"strIngredient1\": \"Cider\"\n        },\n        {\n            \"strIngredient1\": \"Sprite\"\n        },\n        {\n            \"strIngredient1\": \"7-Up\"\n        },\n        {\n            \"strIngredient1\": \"Blackberry brandy\"\n        },\n        {\n            \"strIngredient1\": \"Peppermint schnapps\"\n        },\n        {\n            \"strIngredient1\": \"Creme de Cassis\"\n        },\n        {\n            \"strIngredient1\": \"Jack Daniels\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetGlasses",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-rapidapi-host",
+						"value": "the-cocktail-db.p.rapidapi.com",
+						"type": "text"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://the-cocktail-db.p.rapidapi.com/list.php?g=list",
+					"protocol": "https",
+					"host": [
+						"the-cocktail-db",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"list.php"
+					],
+					"query": [
+						{
+							"key": "g",
+							"value": "list"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetGlassesResponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-rapidapi-host",
+								"value": "the-cocktail-db.p.rapidapi.com",
+								"type": "text"
+							},
+							{
+								"key": "x-rapidapi-key",
+								"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://the-cocktail-db.p.rapidapi.com/list.php?g=list",
+							"protocol": "https",
+							"host": [
+								"the-cocktail-db",
+								"p",
+								"rapidapi",
+								"com"
+							],
+							"path": [
+								"list.php"
+							],
+							"query": [
+								{
+									"key": "g",
+									"value": "list"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "5a30525999247461-IAD"
+						},
+						{
+							"key": "cf-request-id",
+							"value": "035211cc0300007461c690d200000001"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jun 2020 01:36:40 GMT"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "RapidAPI-1.1.13"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cfduid=d3226768592f68b5e6c27e1e3171f81a51592098599; expires=Tue, 14-Jul-20 01:36:39 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; SameSite=Lax; Secure"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.0.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-RapidAPI-Region",
+							"value": "AWS - us-east-1"
+						},
+						{
+							"key": "X-RapidAPI-Version",
+							"value": "1.1.13"
+						},
+						{
+							"key": "Content-Length",
+							"value": "302"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"drinks\": [\n        {\n            \"strGlass\": \"Highball glass\"\n        },\n        {\n            \"strGlass\": \"Cocktail glass\"\n        },\n        {\n            \"strGlass\": \"Old-fashioned glass\"\n        },\n        {\n            \"strGlass\": \"Collins glass\"\n        },\n        {\n            \"strGlass\": \"Pousse cafe glass\"\n        },\n        {\n            \"strGlass\": \"Champagne flute\"\n        },\n        {\n            \"strGlass\": \"Whiskey sour glass\"\n        },\n        {\n            \"strGlass\": \"Brandy snifter\"\n        },\n        {\n            \"strGlass\": \"White wine glass\"\n        },\n        {\n            \"strGlass\": \"Nick and Nora Glass\"\n        },\n        {\n            \"strGlass\": \"Hurricane glass\"\n        },\n        {\n            \"strGlass\": \"Coffee mug\"\n        },\n        {\n            \"strGlass\": \"Shot glass\"\n        },\n        {\n            \"strGlass\": \"Jar\"\n        },\n        {\n            \"strGlass\": \"Irish coffee cup\"\n        },\n        {\n            \"strGlass\": \"Punch bowl\"\n        },\n        {\n            \"strGlass\": \"Pitcher\"\n        },\n        {\n            \"strGlass\": \"Pint glass\"\n        },\n        {\n            \"strGlass\": \"Copper Mug\"\n        },\n        {\n            \"strGlass\": \"Wine Glass\"\n        },\n        {\n            \"strGlass\": \"Cordial glass\"\n        },\n        {\n            \"strGlass\": \"Beer mug\"\n        },\n        {\n            \"strGlass\": \"Margarita/Coupette glass\"\n        },\n        {\n            \"strGlass\": \"Beer pilsner\"\n        },\n        {\n            \"strGlass\": \"Beer Glass\"\n        },\n        {\n            \"strGlass\": \"Parfait glass\"\n        },\n        {\n            \"strGlass\": \"Mason jar\"\n        },\n        {\n            \"strGlass\": \"Margarita glass\"\n        },\n        {\n            \"strGlass\": \"Martini Glass\"\n        },\n        {\n            \"strGlass\": \"Balloon Glass\"\n        },\n        {\n            \"strGlass\": \"Coupe Glass\"\n        },\n        {\n            \"strGlass\": \"\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetCategories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-rapidapi-host",
+						"value": "the-cocktail-db.p.rapidapi.com",
+						"type": "text"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://the-cocktail-db.p.rapidapi.com/list.php?c=list",
+					"protocol": "https",
+					"host": [
+						"the-cocktail-db",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"list.php"
+					],
+					"query": [
+						{
+							"key": "c",
+							"value": "list"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetCategoriesResponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-rapidapi-host",
+								"value": "the-cocktail-db.p.rapidapi.com",
+								"type": "text"
+							},
+							{
+								"key": "x-rapidapi-key",
+								"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://the-cocktail-db.p.rapidapi.com/list.php?c=list",
+							"protocol": "https",
+							"host": [
+								"the-cocktail-db",
+								"p",
+								"rapidapi",
+								"com"
+							],
+							"path": [
+								"list.php"
+							],
+							"query": [
+								{
+									"key": "c",
+									"value": "list"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "5a3052bc493002ef-IAD"
+						},
+						{
+							"key": "cf-request-id",
+							"value": "03521209ac000002eff581a200000001"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jun 2020 01:36:55 GMT"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "RapidAPI-1.1.13"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cfduid=dbebc268d3352813703613c8ba7f646dc1592098615; expires=Tue, 14-Jul-20 01:36:55 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; SameSite=Lax; Secure"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.0.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-RapidAPI-Region",
+							"value": "AWS - us-east-1"
+						},
+						{
+							"key": "X-RapidAPI-Version",
+							"value": "1.1.13"
+						},
+						{
+							"key": "Content-Length",
+							"value": "157"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"drinks\": [\n        {\n            \"strCategory\": \"Ordinary Drink\"\n        },\n        {\n            \"strCategory\": \"Cocktail\"\n        },\n        {\n            \"strCategory\": \"Milk / Float / Shake\"\n        },\n        {\n            \"strCategory\": \"Other/Unknown\"\n        },\n        {\n            \"strCategory\": \"Cocoa\"\n        },\n        {\n            \"strCategory\": \"Shot\"\n        },\n        {\n            \"strCategory\": \"Coffee / Tea\"\n        },\n        {\n            \"strCategory\": \"Homemade Liqueur\"\n        },\n        {\n            \"strCategory\": \"Punch / Party Drink\"\n        },\n        {\n            \"strCategory\": \"Beer\"\n        },\n        {\n            \"strCategory\": \"Soft Drink / Soda\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetByIngredient",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-rapidapi-host",
+						"value": "the-cocktail-db.p.rapidapi.com",
+						"type": "text"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://the-cocktail-db.p.rapidapi.com/filter.php?i=Gin",
+					"protocol": "https",
+					"host": [
+						"the-cocktail-db",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"filter.php"
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "Gin"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetByIngredientResponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-rapidapi-host",
+								"value": "the-cocktail-db.p.rapidapi.com",
+								"type": "text"
+							},
+							{
+								"key": "x-rapidapi-key",
+								"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://the-cocktail-db.p.rapidapi.com/filter.php?i=Gin",
+							"protocol": "https",
+							"host": [
+								"the-cocktail-db",
+								"p",
+								"rapidapi",
+								"com"
+							],
+							"path": [
+								"filter.php"
+							],
+							"query": [
+								{
+									"key": "i",
+									"value": "Gin"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "5a305306793d0987-IAD"
+						},
+						{
+							"key": "cf-request-id",
+							"value": "035212380700000987b0b2e200000001"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jun 2020 01:37:07 GMT"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "RapidAPI-1.1.13"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cfduid=dba9f25c15249d39d3bbd1762f383c4161592098627; expires=Tue, 14-Jul-20 01:37:07 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; SameSite=Lax; Secure"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.0.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-RapidAPI-Region",
+							"value": "AWS - us-east-1"
+						},
+						{
+							"key": "X-RapidAPI-Version",
+							"value": "1.1.13"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2304"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"drinks\": [\n        {\n            \"strDrink\": \"3-Mile Long Island Iced Tea\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/rrtssw1472668972.jpg\",\n            \"idDrink\": \"15300\"\n        },\n        {\n            \"strDrink\": \"69 Special\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vqyxqx1472669095.jpg\",\n            \"idDrink\": \"13940\"\n        },\n        {\n            \"strDrink\": \"A1\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg\",\n            \"idDrink\": \"17222\"\n        },\n        {\n            \"strDrink\": \"Abbey Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/mr30ob1582479875.jpg\",\n            \"idDrink\": \"17834\"\n        },\n        {\n            \"strDrink\": \"Abbey Martini\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/2mcozt1504817403.jpg\",\n            \"idDrink\": \"17223\"\n        },\n        {\n            \"strDrink\": \"Ace\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/l3cd7f1504818306.jpg\",\n            \"idDrink\": \"17225\"\n        },\n        {\n            \"strDrink\": \"Adam & Eve\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vfeumw1504819077.jpg\",\n            \"idDrink\": \"17226\"\n        },\n        {\n            \"strDrink\": \"Addison\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/yzva7x1504820300.jpg\",\n            \"idDrink\": \"17228\"\n        },\n        {\n            \"strDrink\": \"Alaska Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wsyryt1483387720.jpg\",\n            \"idDrink\": \"11013\"\n        },\n        {\n            \"strDrink\": \"Alexander\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/urystu1478253039.jpg\",\n            \"idDrink\": \"11014\"\n        },\n        {\n            \"strDrink\": \"Allies Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qvprvp1483388104.jpg\",\n            \"idDrink\": \"11022\"\n        },\n        {\n            \"strDrink\": \"Angel Face\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vqpptp1478253178.jpg\",\n            \"idDrink\": \"11034\"\n        },\n        {\n            \"strDrink\": \"Archbishop\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/4g6xds1582579703.jpg\",\n            \"idDrink\": \"11052\"\n        },\n        {\n            \"strDrink\": \"Army special\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/55muhh1493068062.jpg\",\n            \"idDrink\": \"17066\"\n        },\n        {\n            \"strDrink\": \"Arthur Tompkins\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/7onfhz1493067921.jpg\",\n            \"idDrink\": \"11054\"\n        },\n        {\n            \"strDrink\": \"Artillery\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/g1vnbe1493067747.jpg\",\n            \"idDrink\": \"11055\"\n        },\n        {\n            \"strDrink\": \"AT&T\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/rhhwmp1493067619.jpg\",\n            \"idDrink\": \"13938\"\n        },\n        {\n            \"strDrink\": \"Aviation\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ruutxt1478253328.jpg\",\n            \"idDrink\": \"17180\"\n        },\n        {\n            \"strDrink\": \"Bermuda Highball\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qrvtww1441206528.jpg\",\n            \"idDrink\": \"11084\"\n        },\n        {\n            \"strDrink\": \"Bijou\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/rysb3r1513706985.jpg\",\n            \"idDrink\": \"17254\"\n        },\n        {\n            \"strDrink\": \"Bluebird\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/5jhyd01582579843.jpg\",\n            \"idDrink\": \"11120\"\n        },\n        {\n            \"strDrink\": \"Bombay Cassis\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/h1e0e51510136907.jpg\",\n            \"idDrink\": \"17242\"\n        },\n        {\n            \"strDrink\": \"Boomerang\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/3m6yz81504389551.jpg\",\n            \"idDrink\": \"11124\"\n        },\n        {\n            \"strDrink\": \"Boxcar\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/pwgtpa1504366376.jpg\",\n            \"idDrink\": \"11149\"\n        },\n        {\n            \"strDrink\": \"Bramble\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/lvzl3r1504372526.jpg\",\n            \"idDrink\": \"17210\"\n        },\n        {\n            \"strDrink\": \"Casino\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/1mvjxg1504348579.jpg\",\n            \"idDrink\": \"17185\"\n        },\n        {\n            \"strDrink\": \"Casino Royale\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/3qpv121504366699.jpg\",\n            \"idDrink\": \"11224\"\n        },\n        {\n            \"strDrink\": \"Cherry Electric Lemonade\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/tquyyt1451299548.jpg\",\n            \"idDrink\": \"17174\"\n        },\n        {\n            \"strDrink\": \"Clover Club\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/t0aja61504348715.jpg\",\n            \"idDrink\": \"17186\"\n        },\n        {\n            \"strDrink\": \"Corpse Reviver #2\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/gifgao1513704334.jpg\",\n            \"idDrink\": \"17250\"\n        },\n        {\n            \"strDrink\": \"Derby\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/i502ra1504349156.jpg\",\n            \"idDrink\": \"17187\"\n        },\n        {\n            \"strDrink\": \"Dragonfly\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/uc63bh1582483589.jpg\",\n            \"idDrink\": \"11320\"\n        },\n        {\n            \"strDrink\": \"Dry Martini\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/6ck9yi1589574317.jpg\",\n            \"idDrink\": \"11005\"\n        },\n        {\n            \"strDrink\": \"Dubonnet Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/pfz3hz1582483111.jpg\",\n            \"idDrink\": \"11326\"\n        },\n        {\n            \"strDrink\": \"English Highball\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/dhvr7d1504519752.jpg\",\n            \"idDrink\": \"11338\"\n        },\n        {\n            \"strDrink\": \"English Rose Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/yxwrpp1441208697.jpg\",\n            \"idDrink\": \"11339\"\n        },\n        {\n            \"strDrink\": \"Flying Dutchman\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/mwko4q1582482903.jpg\",\n            \"idDrink\": \"11368\"\n        },\n        {\n            \"strDrink\": \"French \\\"75\\\"\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ilv6y01582482304.jpg\",\n            \"idDrink\": \"11379\"\n        },\n        {\n            \"strDrink\": \"French 75\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/4qnyty1504368615.jpg\",\n            \"idDrink\": \"17197\"\n        },\n        {\n            \"strDrink\": \"French Negroni\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/x8lhp41513703167.jpg\",\n            \"idDrink\": \"17248\"\n        },\n        {\n            \"strDrink\": \"Gentleman's Club\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/k2r7wv1582481454.jpg\",\n            \"idDrink\": \"11396\"\n        },\n        {\n            \"strDrink\": \"Gimlet\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/3xgldt1513707271.jpg\",\n            \"idDrink\": \"17255\"\n        },\n        {\n            \"strDrink\": \"Gin And Tonic\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/z0omyp1582480573.jpg\",\n            \"idDrink\": \"11403\"\n        },\n        {\n            \"strDrink\": \"Gin Basil Smash\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/jqh2141572807327.jpg\",\n            \"idDrink\": \"178314\"\n        },\n        {\n            \"strDrink\": \"Gin Cooler\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/678xt11582481163.jpg\",\n            \"idDrink\": \"11407\"\n        },\n        {\n            \"strDrink\": \"Gin Daisy\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/z6e22f1582581155.jpg\",\n            \"idDrink\": \"11408\"\n        },\n        {\n            \"strDrink\": \"Gin Fizz\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xhl8q31504351772.jpg\",\n            \"idDrink\": \"11410\"\n        },\n        {\n            \"strDrink\": \"Gin Rickey\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/s00d6f1504883945.jpg\",\n            \"idDrink\": \"17230\"\n        },\n        {\n            \"strDrink\": \"Gin Sling\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/8cl9sm1582581761.jpg\",\n            \"idDrink\": \"11415\"\n        },\n        {\n            \"strDrink\": \"Gin Smash\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/hp41fi1504883656.jpg\",\n            \"idDrink\": \"11416\"\n        },\n        {\n            \"strDrink\": \"Gin Sour\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/mt7l7m1504883523.jpg\",\n            \"idDrink\": \"11417\"\n        },\n        {\n            \"strDrink\": \"Gin Squirt\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xrbhz61504883702.jpg\",\n            \"idDrink\": \"11418\"\n        },\n        {\n            \"strDrink\": \"Gin Swizzle\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/sybce31504884026.jpg\",\n            \"idDrink\": \"11419\"\n        },\n        {\n            \"strDrink\": \"Gin Toddy\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/jxstwf1582582101.jpg\",\n            \"idDrink\": \"11420\"\n        },\n        {\n            \"strDrink\": \"Grass Skirt\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qyvprp1473891585.jpg\",\n            \"idDrink\": \"11433\"\n        },\n        {\n            \"strDrink\": \"Hawaiian Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ujoh9x1504882987.jpg\",\n            \"idDrink\": \"11472\"\n        },\n        {\n            \"strDrink\": \"Imperial Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/bcsj2e1487603625.jpg\",\n            \"idDrink\": \"12706\"\n        },\n        {\n            \"strDrink\": \"Jewel Of The Nile\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/hx4nrb1504884947.jpg\",\n            \"idDrink\": \"11566\"\n        },\n        {\n            \"strDrink\": \"Jitterbug\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wwqvrq1441245318.jpg\",\n            \"idDrink\": \"16178\"\n        },\n        {\n            \"strDrink\": \"Lady Love Fizz\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/20d63k1504885263.jpg\",\n            \"idDrink\": \"11634\"\n        },\n        {\n            \"strDrink\": \"London Town\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/rpsrqv1468923507.jpg\",\n            \"idDrink\": \"11662\"\n        },\n        {\n            \"strDrink\": \"Lone Tree Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/tsxpty1468923417.jpg\",\n            \"idDrink\": \"11664\"\n        },\n        {\n            \"strDrink\": \"Lone Tree Cooler\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wsyqry1479298485.jpg\",\n            \"idDrink\": \"11666\"\n        },\n        {\n            \"strDrink\": \"Long Island Tea\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/tppn6i1589574695.jpg\",\n            \"idDrink\": \"11002\"\n        },\n        {\n            \"strDrink\": \"Martinez 2\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/fs6kiq1513708455.jpg\",\n            \"idDrink\": \"17256\"\n        },\n        {\n            \"strDrink\": \"Martinez Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wwxwvr1439906452.jpg\",\n            \"idDrink\": \"11720\"\n        },\n        {\n            \"strDrink\": \"Martini\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/71t8581504353095.jpg\",\n            \"idDrink\": \"11728\"\n        },\n        {\n            \"strDrink\": \"Monkey Gland\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/94psp81504350690.jpg\",\n            \"idDrink\": \"17189\"\n        },\n        {\n            \"strDrink\": \"Munich Mule\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/rj55pl1582476101.jpg\",\n            \"idDrink\": \"178315\"\n        },\n        {\n            \"strDrink\": \"National Aquarium\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/dlw0om1503565021.jpg\",\n            \"idDrink\": \"13192\"\n        },\n        {\n            \"strDrink\": \"Negroni\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg\",\n            \"idDrink\": \"11003\"\n        },\n        {\n            \"strDrink\": \"Orange Oasis\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/su1olx1582473812.jpg\",\n            \"idDrink\": \"11870\"\n        },\n        {\n            \"strDrink\": \"Paradise\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ejozd71504351060.jpg\",\n            \"idDrink\": \"17190\"\n        },\n        {\n            \"strDrink\": \"Pegu Club\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/jfkemm1513703902.jpg\",\n            \"idDrink\": \"17249\"\n        },\n        {\n            \"strDrink\": \"Pink Gin\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qyr51e1504888618.jpg\",\n            \"idDrink\": \"11936\"\n        },\n        {\n            \"strDrink\": \"Pink Lady\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/5ia6j21504887829.jpg\",\n            \"idDrink\": \"11938\"\n        },\n        {\n            \"strDrink\": \"Poppy Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/cslw1w1504389915.jpg\",\n            \"idDrink\": \"11959\"\n        },\n        {\n            \"strDrink\": \"Queen Elizabeth\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vpqspv1478963339.jpg\",\n            \"idDrink\": \"11991\"\n        },\n        {\n            \"strDrink\": \"Rose\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/8kxbvq1504371462.jpg\",\n            \"idDrink\": \"17208\"\n        },\n        {\n            \"strDrink\": \"Rosemary Blue\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qwc5f91512406543.jpg\",\n            \"idDrink\": \"17245\"\n        },\n        {\n            \"strDrink\": \"Royal Fizz\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wrh44j1504390609.jpg\",\n            \"idDrink\": \"12055\"\n        },\n        {\n            \"strDrink\": \"Royal Gin Fizz\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/pe1x1c1504735672.jpg\",\n            \"idDrink\": \"12057\"\n        },\n        {\n            \"strDrink\": \"Ruby Tuesday\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qsyqqq1441553437.jpg\",\n            \"idDrink\": \"17114\"\n        },\n        {\n            \"strDrink\": \"Salted Toffee Martini\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/3s6mlr1509551211.jpg\",\n            \"idDrink\": \"17233\"\n        },\n        {\n            \"strDrink\": \"Salty Dog\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/4vfge01504890216.jpg\",\n            \"idDrink\": \"12107\"\n        },\n        {\n            \"strDrink\": \"Singapore Sling\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/7dozeg1582578095.jpg\",\n            \"idDrink\": \"12214\"\n        },\n        {\n            \"strDrink\": \"Surf City Lifesaver\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/2rzfer1487602699.jpg\",\n            \"idDrink\": \"12760\"\n        },\n        {\n            \"strDrink\": \"The Laverstoke\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/6xfj5t1517748412.jpg\",\n            \"idDrink\": \"17824\"\n        },\n        {\n            \"strDrink\": \"Tom Collins\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qystvv1439907682.jpg\",\n            \"idDrink\": \"12402\"\n        },\n        {\n            \"strDrink\": \"Turf Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/utypqq1441554367.jpg\",\n            \"idDrink\": \"12418\"\n        },\n        {\n            \"strDrink\": \"Tuxedo Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/4u0nbl1504352551.jpg\",\n            \"idDrink\": \"12420\"\n        },\n        {\n            \"strDrink\": \"Vesper\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/mtdxpa1504374514.jpg\",\n            \"idDrink\": \"17218\"\n        },\n        {\n            \"strDrink\": \"Victor\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/voapgc1492976416.jpg\",\n            \"idDrink\": \"12450\"\n        },\n        {\n            \"strDrink\": \"Waikiki Beachcomber\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ysuqus1441208583.jpg\",\n            \"idDrink\": \"12474\"\n        },\n        {\n            \"strDrink\": \"White Lady\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/jofsaz1504352991.jpg\",\n            \"idDrink\": \"17194\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetByName",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-rapidapi-host",
+						"value": "the-cocktail-db.p.rapidapi.com",
+						"type": "text"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://the-cocktail-db.p.rapidapi.com/search.php?i=vodka",
+					"protocol": "https",
+					"host": [
+						"the-cocktail-db",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"search.php"
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "vodka"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetByNameResponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-rapidapi-host",
+								"value": "the-cocktail-db.p.rapidapi.com",
+								"type": "text"
+							},
+							{
+								"key": "x-rapidapi-key",
+								"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://the-cocktail-db.p.rapidapi.com/search.php?i=vodka",
+							"protocol": "https",
+							"host": [
+								"the-cocktail-db",
+								"p",
+								"rapidapi",
+								"com"
+							],
+							"path": [
+								"search.php"
+							],
+							"query": [
+								{
+									"key": "i",
+									"value": "vodka"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "5a3053650cffc1e8-IAD"
+						},
+						{
+							"key": "cf-request-id",
+							"value": "03521273250000c1e88b389200000001"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jun 2020 01:37:22 GMT"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "RapidAPI-1.1.13"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cfduid=dfa18eb823e627554004ab52dbf4c300c1592098642; expires=Tue, 14-Jul-20 01:37:22 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; SameSite=Lax; Secure"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.0.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-RapidAPI-Region",
+							"value": "AWS - us-east-1"
+						},
+						{
+							"key": "X-RapidAPI-Version",
+							"value": "1.1.13"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1903"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"ingredients\": [\n        {\n            \"idIngredient\": \"1\",\n            \"strIngredient\": \"Vodka\",\n            \"strDescription\": \"Vodka is a distilled beverage composed primarily of water and ethanol, sometimes with traces of impurities and flavorings. Traditionally, vodka is made by the distillation of fermented cereal grains or potatoes, though some modern brands use other substances, such as fruits or sugar.\\r\\n\\r\\nSince the 1890s, the standard Polish, Russian, Belarusian, Ukrainian, Estonian, Latvian, Lithuanian and Czech vodkas are 40% alcohol by volume ABV (80 US proof), a percentage that is widely misattributed to Dmitri Mendeleev. The European Union has established a minimum of 37.5% ABV for any \\\"European vodka\\\" to be named as such. Products sold as \\\"vodka\\\" in the United States must have a minimum alcohol content of 40%. Even with these loose restrictions, most vodka sold contains 40% ABV. For homemade vodkas and distilled beverages referred to as \\\"moonshine\\\", see moonshine by country.\\r\\n\\r\\nVodka is traditionally drunk neat (not mixed with any water, ice, or other mixer), though it is often served chilled in the vodka belt countries (Belarus, Estonia, Finland, Iceland, Latvia, Lithuania, Norway, Poland, Russia, Sweden, Ukraine). It is also commonly used in cocktails and mixed drinks, such as the vodka martini, Cosmopolitan, vodka tonic, Screwdriver, Greyhound, Black or White Russian, Moscow Mule, and Bloody Mary.\\r\\n\\r\\nScholars debate the beginnings of vodka. It is a contentious issue because very little historical material is available. For many centuries, beverages differed significantly compared to the vodka of today, as the spirit at that time had a different flavor, color and smell, and was originally used as medicine. It contained little alcohol, an estimated maximum of about 14%, as only this amount can be attained by natural fermentation. The still, allowing for distillation (\\\"burning of wine\\\"), increased purity, and increased alcohol content, was invented in the 8th century.\\r\\n\\r\\nA common property of the vodkas produced in the United States and Europe is the extensive use of filtration prior to any additional processing including the addition of flavorants. Filtering is sometimes done in the still during distillation, as well as afterwards, where the distilled vodka is filtered through activated charcoal and other media to absorb trace amounts of substances that alter or impart off-flavors to the vodka. However, this is not the case in the traditional vodka-producing nations, so many distillers from these countries prefer to use very accurate distillation but minimal filtering, thus preserving the unique flavors and characteristics of their products.\\r\\n\\r\\nThe master distiller is in charge of distilling the vodka and directing its filtration, which includes the removal of the \\\"fore-shots\\\", \\\"heads\\\" and \\\"tails\\\". These components of the distillate contain flavor compounds such as ethyl acetate and ethyl lactate (heads) as well as the fusel oils (tails) that impact the usually desired clean taste of vodka. Through numerous rounds of distillation, or the use of a fractioning still, the taste is modified and clarity is increased. In contrast, distillery process for liquors such as whiskey, rum, and baijiu allow portions of the \\\"heads\\\" and \\\"tails\\\" to remain, giving them their unique flavors.\\r\\n\\r\\nRepeated distillation of vodka will make its ethanol level much higher than is acceptable to most end users, whether legislation determines strength limits or not. Depending on the distillation method and the technique of the stillmaster, the final filtered and distilled vodka may have as much as 95–96% ethanol. As such, most vodka is diluted with water prior to bottling.\\r\\n\\r\\nPolish distilleries make a very pure (96%, 192 proof, formerly also 98%) rectified spirit (Polish language: spirytus rektyfikowany). Technically a form of vodka, it is sold in liquor stores rather than pharmacies. Similarly, the German market often carries German, Hungarian, Polish, and Ukrainian-made varieties of vodka of 90 to 95% ABV. A Bulgarian vodka, Balkan 176°, has an 88% alcohol content. Everclear, an American brand, is also sold at 95% ABV.\",\n            \"strType\": \"Vodka\",\n            \"strAlcohol\": \"Yes\",\n            \"strABV\": \"40\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetByNamev2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-rapidapi-host",
+						"value": "the-cocktail-db.p.rapidapi.com",
+						"type": "text"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://the-cocktail-db.p.rapidapi.com/search.php?i=vodka",
+					"protocol": "https",
+					"host": [
+						"the-cocktail-db",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"search.php"
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "vodka"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetByNamev2Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-rapidapi-host",
+								"value": "the-cocktail-db.p.rapidapi.com",
+								"type": "text"
+							},
+							{
+								"key": "x-rapidapi-key",
+								"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://the-cocktail-db.p.rapidapi.com/search.php?i=vodka",
+							"protocol": "https",
+							"host": [
+								"the-cocktail-db",
+								"p",
+								"rapidapi",
+								"com"
+							],
+							"path": [
+								"search.php"
+							],
+							"query": [
+								{
+									"key": "i",
+									"value": "vodka"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "5a3053afdeb40d92-IAD"
+						},
+						{
+							"key": "cf-request-id",
+							"value": "035212a1e600000d9259b54200000001"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jun 2020 01:37:34 GMT"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "RapidAPI-1.1.13"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cfduid=d0d31097ef41434674511addc3b877a961592098654; expires=Tue, 14-Jul-20 01:37:34 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; SameSite=Lax; Secure"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.0.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-RapidAPI-Region",
+							"value": "AWS - us-east-1"
+						},
+						{
+							"key": "X-RapidAPI-Version",
+							"value": "1.1.13"
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"ingredients\": [\n        {\n            \"idIngredient\": \"1\",\n            \"strIngredient\": \"Vodka\",\n            \"strDescription\": \"Vodka is a distilled beverage composed primarily of water and ethanol, sometimes with traces of impurities and flavorings. Traditionally, vodka is made by the distillation of fermented cereal grains or potatoes, though some modern brands use other substances, such as fruits or sugar.\\r\\n\\r\\nSince the 1890s, the standard Polish, Russian, Belarusian, Ukrainian, Estonian, Latvian, Lithuanian and Czech vodkas are 40% alcohol by volume ABV (80 US proof), a percentage that is widely misattributed to Dmitri Mendeleev. The European Union has established a minimum of 37.5% ABV for any \\\"European vodka\\\" to be named as such. Products sold as \\\"vodka\\\" in the United States must have a minimum alcohol content of 40%. Even with these loose restrictions, most vodka sold contains 40% ABV. For homemade vodkas and distilled beverages referred to as \\\"moonshine\\\", see moonshine by country.\\r\\n\\r\\nVodka is traditionally drunk neat (not mixed with any water, ice, or other mixer), though it is often served chilled in the vodka belt countries (Belarus, Estonia, Finland, Iceland, Latvia, Lithuania, Norway, Poland, Russia, Sweden, Ukraine). It is also commonly used in cocktails and mixed drinks, such as the vodka martini, Cosmopolitan, vodka tonic, Screwdriver, Greyhound, Black or White Russian, Moscow Mule, and Bloody Mary.\\r\\n\\r\\nScholars debate the beginnings of vodka. It is a contentious issue because very little historical material is available. For many centuries, beverages differed significantly compared to the vodka of today, as the spirit at that time had a different flavor, color and smell, and was originally used as medicine. It contained little alcohol, an estimated maximum of about 14%, as only this amount can be attained by natural fermentation. The still, allowing for distillation (\\\"burning of wine\\\"), increased purity, and increased alcohol content, was invented in the 8th century.\\r\\n\\r\\nA common property of the vodkas produced in the United States and Europe is the extensive use of filtration prior to any additional processing including the addition of flavorants. Filtering is sometimes done in the still during distillation, as well as afterwards, where the distilled vodka is filtered through activated charcoal and other media to absorb trace amounts of substances that alter or impart off-flavors to the vodka. However, this is not the case in the traditional vodka-producing nations, so many distillers from these countries prefer to use very accurate distillation but minimal filtering, thus preserving the unique flavors and characteristics of their products.\\r\\n\\r\\nThe master distiller is in charge of distilling the vodka and directing its filtration, which includes the removal of the \\\"fore-shots\\\", \\\"heads\\\" and \\\"tails\\\". These components of the distillate contain flavor compounds such as ethyl acetate and ethyl lactate (heads) as well as the fusel oils (tails) that impact the usually desired clean taste of vodka. Through numerous rounds of distillation, or the use of a fractioning still, the taste is modified and clarity is increased. In contrast, distillery process for liquors such as whiskey, rum, and baijiu allow portions of the \\\"heads\\\" and \\\"tails\\\" to remain, giving them their unique flavors.\\r\\n\\r\\nRepeated distillation of vodka will make its ethanol level much higher than is acceptable to most end users, whether legislation determines strength limits or not. Depending on the distillation method and the technique of the stillmaster, the final filtered and distilled vodka may have as much as 95–96% ethanol. As such, most vodka is diluted with water prior to bottling.\\r\\n\\r\\nPolish distilleries make a very pure (96%, 192 proof, formerly also 98%) rectified spirit (Polish language: spirytus rektyfikowany). Technically a form of vodka, it is sold in liquor stores rather than pharmacies. Similarly, the German market often carries German, Hungarian, Polish, and Ukrainian-made varieties of vodka of 90 to 95% ABV. A Bulgarian vodka, Balkan 176°, has an 88% alcohol content. Everclear, an American brand, is also sold at 95% ABV.\",\n            \"strType\": \"Vodka\",\n            \"strAlcohol\": \"Yes\",\n            \"strABV\": \"40\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "FilterByCategory",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-rapidapi-host",
+						"value": "the-cocktail-db.p.rapidapi.com",
+						"type": "text"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://the-cocktail-db.p.rapidapi.com/filter.php?c=Cocktail",
+					"protocol": "https",
+					"host": [
+						"the-cocktail-db",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"filter.php"
+					],
+					"query": [
+						{
+							"key": "c",
+							"value": "Cocktail"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "FilterByCategoryResponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-rapidapi-host",
+								"value": "the-cocktail-db.p.rapidapi.com",
+								"type": "text"
+							},
+							{
+								"key": "x-rapidapi-key",
+								"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://the-cocktail-db.p.rapidapi.com/filter.php?c=Cocktail",
+							"protocol": "https",
+							"host": [
+								"the-cocktail-db",
+								"p",
+								"rapidapi",
+								"com"
+							],
+							"path": [
+								"filter.php"
+							],
+							"query": [
+								{
+									"key": "c",
+									"value": "Cocktail"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "5a3053e63ba9ced8-IAD"
+						},
+						{
+							"key": "cf-request-id",
+							"value": "035212c3e20000ced88f96c200000001"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jun 2020 01:37:43 GMT"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "RapidAPI-1.1.13"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cfduid=db329838b898ee0d480995b28f7d688de1592098663; expires=Tue, 14-Jul-20 01:37:43 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; SameSite=Lax; Secure"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.0.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-RapidAPI-Region",
+							"value": "AWS - us-east-1"
+						},
+						{
+							"key": "X-RapidAPI-Version",
+							"value": "1.1.13"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2522"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"drinks\": [\n        {\n            \"strDrink\": \"'57 Chevy with a White License Plate\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qyyvtu1468878544.jpg\",\n            \"idDrink\": \"14029\"\n        },\n        {\n            \"strDrink\": \"155 Belmont\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/yqvvqs1475667388.jpg\",\n            \"idDrink\": \"15346\"\n        },\n        {\n            \"strDrink\": \"747 Drink\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/i9suxb1582474926.jpg\",\n            \"idDrink\": \"178318\"\n        },\n        {\n            \"strDrink\": \"9 1/2 Weeks\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xvwusr1472669302.jpg\",\n            \"idDrink\": \"16108\"\n        },\n        {\n            \"strDrink\": \"A Gilligan's Island\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wysqut1461867176.jpg\",\n            \"idDrink\": \"16943\"\n        },\n        {\n            \"strDrink\": \"A True Amaretto Sour\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/rptuxy1472669372.jpg\",\n            \"idDrink\": \"17005\"\n        },\n        {\n            \"strDrink\": \"A.D.M. (After Dinner Mint)\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ruxuvp1472669600.jpg\",\n            \"idDrink\": \"14560\"\n        },\n        {\n            \"strDrink\": \"A1\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg\",\n            \"idDrink\": \"17222\"\n        },\n        {\n            \"strDrink\": \"Abbey Martini\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/2mcozt1504817403.jpg\",\n            \"idDrink\": \"17223\"\n        },\n        {\n            \"strDrink\": \"Absolut Summertime\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/trpxxs1472669662.jpg\",\n            \"idDrink\": \"14107\"\n        },\n        {\n            \"strDrink\": \"Absolutely Fabulous\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/abcpwr1504817734.jpg\",\n            \"idDrink\": \"17224\"\n        },\n        {\n            \"strDrink\": \"Absolutly Screwed Up\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/yvxrwv1472669728.jpg\",\n            \"idDrink\": \"16134\"\n        },\n        {\n            \"strDrink\": \"Ace\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/l3cd7f1504818306.jpg\",\n            \"idDrink\": \"17225\"\n        },\n        {\n            \"strDrink\": \"Adam & Eve\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vfeumw1504819077.jpg\",\n            \"idDrink\": \"17226\"\n        },\n        {\n            \"strDrink\": \"Addington\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ib0b7g1504818925.jpg\",\n            \"idDrink\": \"17227\"\n        },\n        {\n            \"strDrink\": \"Addison\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/yzva7x1504820300.jpg\",\n            \"idDrink\": \"17228\"\n        },\n        {\n            \"strDrink\": \"Addison Special\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/4vo5651493068493.jpg\",\n            \"idDrink\": \"14272\"\n        },\n        {\n            \"strDrink\": \"Adios Amigos Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/8nk2mp1504819893.jpg\",\n            \"idDrink\": \"17229\"\n        },\n        {\n            \"strDrink\": \"Afterglow\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vuquyv1468876052.jpg\",\n            \"idDrink\": \"12560\"\n        },\n        {\n            \"strDrink\": \"Alice Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qyqtpv1468876144.jpg\",\n            \"idDrink\": \"12562\"\n        },\n        {\n            \"strDrink\": \"Amaretto fizz\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/92h3jz1582474310.jpg\",\n            \"idDrink\": \"178321\"\n        },\n        {\n            \"strDrink\": \"Aperol Spritz\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/iloasq1587661955.jpg\",\n            \"idDrink\": \"178325\"\n        },\n        {\n            \"strDrink\": \"Apple Karate\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/syusvw1468876634.jpg\",\n            \"idDrink\": \"12564\"\n        },\n        {\n            \"strDrink\": \"Applejack\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/sutyqp1479209062.jpg\",\n            \"idDrink\": \"16311\"\n        },\n        {\n            \"strDrink\": \"Aquamarine\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/zvsre31572902738.jpg\",\n            \"idDrink\": \"178319\"\n        },\n        {\n            \"strDrink\": \"Arizona Stingers\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/y7w0721493068255.jpg\",\n            \"idDrink\": \"14584\"\n        },\n        {\n            \"strDrink\": \"Arizona Twister\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ido1j01493068134.jpg\",\n            \"idDrink\": \"17074\"\n        },\n        {\n            \"strDrink\": \"Army special\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/55muhh1493068062.jpg\",\n            \"idDrink\": \"17066\"\n        },\n        {\n            \"strDrink\": \"Aviation\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ruutxt1478253328.jpg\",\n            \"idDrink\": \"17180\"\n        },\n        {\n            \"strDrink\": \"Bahama Mama\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/tyb4a41515793339.jpg\",\n            \"idDrink\": \"17267\"\n        },\n        {\n            \"strDrink\": \"Banana Cream Pi\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/m5p67n1582474609.jpg\",\n            \"idDrink\": \"178320\"\n        },\n        {\n            \"strDrink\": \"Bee's Knees\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/tx8ne41582475326.jpg\",\n            \"idDrink\": \"178317\"\n        },\n        {\n            \"strDrink\": \"Bijou\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/rysb3r1513706985.jpg\",\n            \"idDrink\": \"17254\"\n        },\n        {\n            \"strDrink\": \"Blue Hurricane\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/nwx02s1515795822.jpg\",\n            \"idDrink\": \"17268\"\n        },\n        {\n            \"strDrink\": \"Bombay Cassis\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/h1e0e51510136907.jpg\",\n            \"idDrink\": \"17242\"\n        },\n        {\n            \"strDrink\": \"Bora Bora\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xwuqvw1473201811.jpg\",\n            \"idDrink\": \"12572\"\n        },\n        {\n            \"strDrink\": \"Boulevardier\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/km84qi1513705868.jpg\",\n            \"idDrink\": \"17251\"\n        },\n        {\n            \"strDrink\": \"Brigadier\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/nl89tf1518947401.jpg\",\n            \"idDrink\": \"17825\"\n        },\n        {\n            \"strDrink\": \"Broadside\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/l2o6xu1582476870.jpg\",\n            \"idDrink\": \"178311\"\n        },\n        {\n            \"strDrink\": \"Brooklyn\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ojsezf1582477277.jpg\",\n            \"idDrink\": \"178310\"\n        },\n        {\n            \"strDrink\": \"Cherry Electric Lemonade\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/tquyyt1451299548.jpg\",\n            \"idDrink\": \"17174\"\n        },\n        {\n            \"strDrink\": \"Corn n Oil\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/jfvyog1530108909.jpg\",\n            \"idDrink\": \"17830\"\n        },\n        {\n            \"strDrink\": \"Corpse Reviver #2\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/gifgao1513704334.jpg\",\n            \"idDrink\": \"17250\"\n        },\n        {\n            \"strDrink\": \"Cosmopolitan\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/kpsajh1504368362.jpg\",\n            \"idDrink\": \"17196\"\n        },\n        {\n            \"strDrink\": \"Cosmopolitan Martini\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/upxxpq1439907580.jpg\",\n            \"idDrink\": \"14133\"\n        },\n        {\n            \"strDrink\": \"Cream Soda\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/yqstxr1479209367.jpg\",\n            \"idDrink\": \"14608\"\n        },\n        {\n            \"strDrink\": \"Dark Caipirinha\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/uwstrx1472406058.jpg\",\n            \"idDrink\": \"17177\"\n        },\n        {\n            \"strDrink\": \"Dirty Martini\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vcyvpq1485083300.jpg\",\n            \"idDrink\": \"17181\"\n        },\n        {\n            \"strDrink\": \"Dry Martini\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/6ck9yi1589574317.jpg\",\n            \"idDrink\": \"11005\"\n        },\n        {\n            \"strDrink\": \"Duchamp's Punch\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/g51naw1485084685.jpg\",\n            \"idDrink\": \"17182\"\n        },\n        {\n            \"strDrink\": \"Empellón Cocina's Fat-Washed Mezcal\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/osgvxt1513595509.jpg\",\n            \"idDrink\": \"17246\"\n        },\n        {\n            \"strDrink\": \"Espresso Martini\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/n0sx531504372951.jpg\",\n            \"idDrink\": \"17212\"\n        },\n        {\n            \"strDrink\": \"Espresso Rumtini\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/acvf171561574403.jpg\",\n            \"idDrink\": \"178309\"\n        },\n        {\n            \"strDrink\": \"Flaming Lamborghini\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/yywpss1461866587.jpg\",\n            \"idDrink\": \"16485\"\n        },\n        {\n            \"strDrink\": \"French Martini\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/clth721504373134.jpg\",\n            \"idDrink\": \"17213\"\n        },\n        {\n            \"strDrink\": \"French Negroni\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/x8lhp41513703167.jpg\",\n            \"idDrink\": \"17248\"\n        },\n        {\n            \"strDrink\": \"Gagliardo\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/lyloe91487602877.jpg\",\n            \"idDrink\": \"12758\"\n        },\n        {\n            \"strDrink\": \"Gimlet\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/3xgldt1513707271.jpg\",\n            \"idDrink\": \"17255\"\n        },\n        {\n            \"strDrink\": \"Gin Basil Smash\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/jqh2141572807327.jpg\",\n            \"idDrink\": \"178314\"\n        },\n        {\n            \"strDrink\": \"Gin Rickey\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/s00d6f1504883945.jpg\",\n            \"idDrink\": \"17230\"\n        },\n        {\n            \"strDrink\": \"Greyhound\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/g5upn41513706732.jpg\",\n            \"idDrink\": \"17252\"\n        },\n        {\n            \"strDrink\": \"Honey Bee\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vu8l7t1582475673.jpg\",\n            \"idDrink\": \"178316\"\n        },\n        {\n            \"strDrink\": \"Hunter's Moon\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/t0iugg1509556712.jpg\",\n            \"idDrink\": \"17239\"\n        },\n        {\n            \"strDrink\": \"Imperial Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/bcsj2e1487603625.jpg\",\n            \"idDrink\": \"12706\"\n        },\n        {\n            \"strDrink\": \"Irish Curdling Cow\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/yrhutv1503563730.jpg\",\n            \"idDrink\": \"16987\"\n        },\n        {\n            \"strDrink\": \"Jitterbug\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wwqvrq1441245318.jpg\",\n            \"idDrink\": \"16178\"\n        },\n        {\n            \"strDrink\": \"Lemon Drop\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/mtpxgk1504373297.jpg\",\n            \"idDrink\": \"14366\"\n        },\n        {\n            \"strDrink\": \"Malibu Twister\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/2dwae41504885321.jpg\",\n            \"idDrink\": \"15224\"\n        },\n        {\n            \"strDrink\": \"Manhattan\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/hz7p4t1589575281.jpg\",\n            \"idDrink\": \"11008\"\n        },\n        {\n            \"strDrink\": \"Martinez 2\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/fs6kiq1513708455.jpg\",\n            \"idDrink\": \"17256\"\n        },\n        {\n            \"strDrink\": \"Martinez Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wwxwvr1439906452.jpg\",\n            \"idDrink\": \"11720\"\n        },\n        {\n            \"strDrink\": \"Martini\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/71t8581504353095.jpg\",\n            \"idDrink\": \"11728\"\n        },\n        {\n            \"strDrink\": \"Mary Pickford\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/f9erqb1504350557.jpg\",\n            \"idDrink\": \"17188\"\n        },\n        {\n            \"strDrink\": \"Miami Vice\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qvuyqw1441208955.jpg\",\n            \"idDrink\": \"13936\"\n        },\n        {\n            \"strDrink\": \"Midnight Mint\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/svuvrq1441208310.jpg\",\n            \"idDrink\": \"14842\"\n        },\n        {\n            \"strDrink\": \"Mojito\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/3z6xdi1589574603.jpg\",\n            \"idDrink\": \"11000\"\n        },\n        {\n            \"strDrink\": \"Mojito #3\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vwxrsw1478251483.jpg\",\n            \"idDrink\": \"15841\"\n        },\n        {\n            \"strDrink\": \"Munich Mule\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/rj55pl1582476101.jpg\",\n            \"idDrink\": \"178315\"\n        },\n        {\n            \"strDrink\": \"New York Lemonade\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/b3n0ge1503565473.jpg\",\n            \"idDrink\": \"13204\"\n        },\n        {\n            \"strDrink\": \"Oatmeal Cookie\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/bsvmlg1515792693.jpg\",\n            \"idDrink\": \"17266\"\n        },\n        {\n            \"strDrink\": \"Old Fashioned\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg\",\n            \"idDrink\": \"11001\"\n        },\n        {\n            \"strDrink\": \"Old Pal\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/x03td31521761009.jpg\",\n            \"idDrink\": \"17827\"\n        },\n        {\n            \"strDrink\": \"Orangeade\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ytsxxw1441167732.jpg\",\n            \"idDrink\": \"12618\"\n        },\n        {\n            \"strDrink\": \"Paloma\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/samm5j1513706393.jpg\",\n            \"idDrink\": \"17253\"\n        },\n        {\n            \"strDrink\": \"Passion Fruit Martini\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/6trfve1582473527.jpg\",\n            \"idDrink\": \"178323\"\n        },\n        {\n            \"strDrink\": \"Pegu Club\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/jfkemm1513703902.jpg\",\n            \"idDrink\": \"17249\"\n        },\n        {\n            \"strDrink\": \"Penicillin\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/hc9b1a1521853096.jpg\",\n            \"idDrink\": \"17829\"\n        },\n        {\n            \"strDrink\": \"Pisco Sour\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/tsssur1439907622.jpg\",\n            \"idDrink\": \"13214\"\n        },\n        {\n            \"strDrink\": \"Rail Splitter\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/stsuqq1441207660.jpg\",\n            \"idDrink\": \"12630\"\n        },\n        {\n            \"strDrink\": \"Rosemary Blue\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qwc5f91512406543.jpg\",\n            \"idDrink\": \"17245\"\n        },\n        {\n            \"strDrink\": \"Ruby Tuesday\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qsyqqq1441553437.jpg\",\n            \"idDrink\": \"17114\"\n        },\n        {\n            \"strDrink\": \"Salted Toffee Martini\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/3s6mlr1509551211.jpg\",\n            \"idDrink\": \"17233\"\n        },\n        {\n            \"strDrink\": \"Shark Attack\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/uv96zr1504793256.jpg\",\n            \"idDrink\": \"16273\"\n        },\n        {\n            \"strDrink\": \"Spice 75\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/0108c41576797064.jpg\",\n            \"idDrink\": \"178322\"\n        },\n        {\n            \"strDrink\": \"Spritz Veneziano\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/51ezka1551456113.jpg\",\n            \"idDrink\": \"178308\"\n        },\n        {\n            \"strDrink\": \"Tequila Sunrise\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/quqyqp1480879103.jpg\",\n            \"idDrink\": \"13621\"\n        },\n        {\n            \"strDrink\": \"The Evil Blue Thing\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ojnpz71504793059.jpg\",\n            \"idDrink\": \"16271\"\n        },\n        {\n            \"strDrink\": \"The Jimmy Conway\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wbcvyo1535794478.jpg\",\n            \"idDrink\": \"17826\"\n        },\n        {\n            \"strDrink\": \"The Last Word\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/91oule1513702624.jpg\",\n            \"idDrink\": \"17247\"\n        },\n        {\n            \"strDrink\": \"The Laverstoke\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/6xfj5t1517748412.jpg\",\n            \"idDrink\": \"17824\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "FilterByAlcoholic",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-rapidapi-host",
+						"value": "the-cocktail-db.p.rapidapi.com",
+						"type": "text"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://the-cocktail-db.p.rapidapi.com/filter.php?a=Alcoholic",
+					"protocol": "https",
+					"host": [
+						"the-cocktail-db",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"filter.php"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "Alcoholic"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "FilterByAlcoholicResponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-rapidapi-host",
+								"value": "the-cocktail-db.p.rapidapi.com",
+								"type": "text"
+							},
+							{
+								"key": "x-rapidapi-key",
+								"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://the-cocktail-db.p.rapidapi.com/filter.php?a=Alcoholic",
+							"protocol": "https",
+							"host": [
+								"the-cocktail-db",
+								"p",
+								"rapidapi",
+								"com"
+							],
+							"path": [
+								"filter.php"
+							],
+							"query": [
+								{
+									"key": "a",
+									"value": "Alcoholic"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "5a3054346f2eeaa6-IAD"
+						},
+						{
+							"key": "cf-request-id",
+							"value": "035212f4c30000eaa6928ca200000001"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jun 2020 01:37:56 GMT"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "RapidAPI-1.1.13"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cfduid=d8c1f933ba00d969572fc16dc123bbc051592098675; expires=Tue, 14-Jul-20 01:37:55 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; SameSite=Lax; Secure"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.0.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-RapidAPI-Region",
+							"value": "AWS - us-east-1"
+						},
+						{
+							"key": "X-RapidAPI-Version",
+							"value": "1.1.13"
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"drinks\": [\n        {\n            \"strDrink\": \"'57 Chevy with a White License Plate\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qyyvtu1468878544.jpg\",\n            \"idDrink\": \"14029\"\n        },\n        {\n            \"strDrink\": \"1-900-FUK-MEUP\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/uxywyw1468877224.jpg\",\n            \"idDrink\": \"15395\"\n        },\n        {\n            \"strDrink\": \"110 in the shade\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xxyywq1454511117.jpg\",\n            \"idDrink\": \"15423\"\n        },\n        {\n            \"strDrink\": \"151 Florida Bushwacker\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/rvwrvv1468877323.jpg\",\n            \"idDrink\": \"14588\"\n        },\n        {\n            \"strDrink\": \"155 Belmont\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/yqvvqs1475667388.jpg\",\n            \"idDrink\": \"15346\"\n        },\n        {\n            \"strDrink\": \"24k nightmare\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg\",\n            \"idDrink\": \"17060\"\n        },\n        {\n            \"strDrink\": \"252\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/rtpxqw1468877562.jpg\",\n            \"idDrink\": \"15288\"\n        },\n        {\n            \"strDrink\": \"3 Wise Men\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wxqpyw1468877677.jpg\",\n            \"idDrink\": \"13899\"\n        },\n        {\n            \"strDrink\": \"3-Mile Long Island Iced Tea\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/rrtssw1472668972.jpg\",\n            \"idDrink\": \"15300\"\n        },\n        {\n            \"strDrink\": \"410 Gone\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xtuyqv1472669026.jpg\",\n            \"idDrink\": \"13581\"\n        },\n        {\n            \"strDrink\": \"50/50\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wwpyvr1461919316.jpg\",\n            \"idDrink\": \"14598\"\n        },\n        {\n            \"strDrink\": \"501 Blue\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ywxwqs1461867097.jpg\",\n            \"idDrink\": \"17105\"\n        },\n        {\n            \"strDrink\": \"69 Special\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vqyxqx1472669095.jpg\",\n            \"idDrink\": \"13940\"\n        },\n        {\n            \"strDrink\": \"747\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xxsxqy1472668106.jpg\",\n            \"idDrink\": \"14229\"\n        },\n        {\n            \"strDrink\": \"747 Drink\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/i9suxb1582474926.jpg\",\n            \"idDrink\": \"178318\"\n        },\n        {\n            \"strDrink\": \"9 1/2 Weeks\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xvwusr1472669302.jpg\",\n            \"idDrink\": \"16108\"\n        },\n        {\n            \"strDrink\": \"A Day at the Beach\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/trptts1454514474.jpg\",\n            \"idDrink\": \"15200\"\n        },\n        {\n            \"strDrink\": \"A Furlong Too Late\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ssxvww1472669166.jpg\",\n            \"idDrink\": \"17831\"\n        },\n        {\n            \"strDrink\": \"A Gilligan's Island\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wysqut1461867176.jpg\",\n            \"idDrink\": \"16943\"\n        },\n        {\n            \"strDrink\": \"A midsummernight dream\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ysqvqp1461867292.jpg\",\n            \"idDrink\": \"15675\"\n        },\n        {\n            \"strDrink\": \"A Night In Old Mandalay\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vyrvxt1461919380.jpg\",\n            \"idDrink\": \"17832\"\n        },\n        {\n            \"strDrink\": \"A Piece of Ass\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/tqxyxx1472719737.jpg\",\n            \"idDrink\": \"16405\"\n        },\n        {\n            \"strDrink\": \"A Splash of Nash\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/rsvtrr1472668201.jpg\",\n            \"idDrink\": \"14564\"\n        },\n        {\n            \"strDrink\": \"A True Amaretto Sour\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/rptuxy1472669372.jpg\",\n            \"idDrink\": \"17005\"\n        },\n        {\n            \"strDrink\": \"A. J.\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/l74qo91582480316.jpg\",\n            \"idDrink\": \"17833\"\n        },\n        {\n            \"strDrink\": \"A.D.M. (After Dinner Mint)\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ruxuvp1472669600.jpg\",\n            \"idDrink\": \"14560\"\n        },\n        {\n            \"strDrink\": \"A1\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg\",\n            \"idDrink\": \"17222\"\n        },\n        {\n            \"strDrink\": \"Abbey Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/mr30ob1582479875.jpg\",\n            \"idDrink\": \"17834\"\n        },\n        {\n            \"strDrink\": \"Abbey Martini\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/2mcozt1504817403.jpg\",\n            \"idDrink\": \"17223\"\n        },\n        {\n            \"strDrink\": \"ABC\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/tqpvqp1472668328.jpg\",\n            \"idDrink\": \"13501\"\n        },\n        {\n            \"strDrink\": \"Abilene\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/smb2oe1582479072.jpg\",\n            \"idDrink\": \"17835\"\n        },\n        {\n            \"strDrink\": \"Absinthe #2\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/uxxtrt1472667197.jpg\",\n            \"idDrink\": \"12790\"\n        },\n        {\n            \"strDrink\": \"Absolut Evergreen\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wrxrxp1472812609.jpg\",\n            \"idDrink\": \"14374\"\n        },\n        {\n            \"strDrink\": \"Absolut limousine\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ssqpyw1472719844.jpg\",\n            \"idDrink\": \"14372\"\n        },\n        {\n            \"strDrink\": \"Absolut Sex\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xtrvtx1472668436.jpg\",\n            \"idDrink\": \"14360\"\n        },\n        {\n            \"strDrink\": \"Absolut Stress #2\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xuyqrw1472811825.jpg\",\n            \"idDrink\": \"15597\"\n        },\n        {\n            \"strDrink\": \"Absolut Summertime\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/trpxxs1472669662.jpg\",\n            \"idDrink\": \"14107\"\n        },\n        {\n            \"strDrink\": \"Absolutely Cranberry Smash\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vqwstv1472811884.jpg\",\n            \"idDrink\": \"15024\"\n        },\n        {\n            \"strDrink\": \"Absolutely Fabulous\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/abcpwr1504817734.jpg\",\n            \"idDrink\": \"17224\"\n        },\n        {\n            \"strDrink\": \"Absolutly Screwed Up\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/yvxrwv1472669728.jpg\",\n            \"idDrink\": \"16134\"\n        },\n        {\n            \"strDrink\": \"Acapulco\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/il9e0r1582478841.jpg\",\n            \"idDrink\": \"17836\"\n        },\n        {\n            \"strDrink\": \"Ace\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/l3cd7f1504818306.jpg\",\n            \"idDrink\": \"17225\"\n        },\n        {\n            \"strDrink\": \"ACID\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xuxpxt1479209317.jpg\",\n            \"idDrink\": \"14610\"\n        },\n        {\n            \"strDrink\": \"Adam\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/v0at4i1582478473.jpg\",\n            \"idDrink\": \"17837\"\n        },\n        {\n            \"strDrink\": \"Adam & Eve\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vfeumw1504819077.jpg\",\n            \"idDrink\": \"17226\"\n        },\n        {\n            \"strDrink\": \"Adam Bomb\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/tpxurs1454513016.jpg\",\n            \"idDrink\": \"16333\"\n        },\n        {\n            \"strDrink\": \"Adam Sunrise\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vtuyvu1472812112.jpg\",\n            \"idDrink\": \"15567\"\n        },\n        {\n            \"strDrink\": \"Addington\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ib0b7g1504818925.jpg\",\n            \"idDrink\": \"17227\"\n        },\n        {\n            \"strDrink\": \"Addison\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/yzva7x1504820300.jpg\",\n            \"idDrink\": \"17228\"\n        },\n        {\n            \"strDrink\": \"Addison Special\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/4vo5651493068493.jpg\",\n            \"idDrink\": \"14272\"\n        },\n        {\n            \"strDrink\": \"Adios Amigos Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/8nk2mp1504819893.jpg\",\n            \"idDrink\": \"17229\"\n        },\n        {\n            \"strDrink\": \"Adonis Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xrvruq1472812030.jpg\",\n            \"idDrink\": \"17838\"\n        },\n        {\n            \"strDrink\": \"Affair\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/h5za6y1582477994.jpg\",\n            \"idDrink\": \"17839\"\n        },\n        {\n            \"strDrink\": \"Affinity\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wzdtnn1582477684.jpg\",\n            \"idDrink\": \"17840\"\n        },\n        {\n            \"strDrink\": \"After Dinner Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vtytxq1483387578.jpg\",\n            \"idDrink\": \"11010\"\n        },\n        {\n            \"strDrink\": \"After Five\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/sk3lr91493068595.jpg\",\n            \"idDrink\": \"13807\"\n        },\n        {\n            \"strDrink\": \"After sex\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xrl66i1493068702.jpg\",\n            \"idDrink\": \"15182\"\n        },\n        {\n            \"strDrink\": \"After Supper Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/quyxwu1483387610.jpg\",\n            \"idDrink\": \"11011\"\n        },\n        {\n            \"strDrink\": \"Afternoon\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vyrurp1472667777.jpg\",\n            \"idDrink\": \"13162\"\n        },\n        {\n            \"strDrink\": \"Alabama Slammer\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qtwxwr1483387647.jpg\",\n            \"idDrink\": \"11012\"\n        },\n        {\n            \"strDrink\": \"Alaska Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wsyryt1483387720.jpg\",\n            \"idDrink\": \"11013\"\n        },\n        {\n            \"strDrink\": \"Alexander\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/urystu1478253039.jpg\",\n            \"idDrink\": \"11014\"\n        },\n        {\n            \"strDrink\": \"Alfie Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ypxsqy1483387829.jpg\",\n            \"idDrink\": \"11019\"\n        },\n        {\n            \"strDrink\": \"Algonquin\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/uwryxx1483387873.jpg\",\n            \"idDrink\": \"11020\"\n        },\n        {\n            \"strDrink\": \"Alice in Wonderland\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/g12lj41493069391.jpg\",\n            \"idDrink\": \"17094\"\n        },\n        {\n            \"strDrink\": \"Allegheny\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/uwvyts1483387934.jpg\",\n            \"idDrink\": \"11021\"\n        },\n        {\n            \"strDrink\": \"Allies Cocktail\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qvprvp1483388104.jpg\",\n            \"idDrink\": \"11022\"\n        },\n        {\n            \"strDrink\": \"Almeria\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/rwsyyu1483388181.jpg\",\n            \"idDrink\": \"11023\"\n        },\n        {\n            \"strDrink\": \"Almond Chocolate Coffee\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/jls02c1493069441.jpg\",\n            \"idDrink\": \"16082\"\n        },\n        {\n            \"strDrink\": \"Almond Joy\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xutuqs1483388296.jpg\",\n            \"idDrink\": \"11024\"\n        },\n        {\n            \"strDrink\": \"Amaretto And Cream\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/dj8n0r1504375018.jpg\",\n            \"idDrink\": \"11025\"\n        },\n        {\n            \"strDrink\": \"Amaretto fizz\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/92h3jz1582474310.jpg\",\n            \"idDrink\": \"178321\"\n        },\n        {\n            \"strDrink\": \"Amaretto Liqueur\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/swqxuv1472719649.jpg\",\n            \"idDrink\": \"12792\"\n        },\n        {\n            \"strDrink\": \"Amaretto Mist\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/utpxxq1483388370.jpg\",\n            \"idDrink\": \"11026\"\n        },\n        {\n            \"strDrink\": \"Amaretto Rose\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/3jm41q1493069578.jpg\",\n            \"idDrink\": \"11027\"\n        },\n        {\n            \"strDrink\": \"Amaretto Shake\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xk79al1493069655.jpg\",\n            \"idDrink\": \"15194\"\n        },\n        {\n            \"strDrink\": \"Amaretto Sour\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xnzc541493070211.jpg\",\n            \"idDrink\": \"13731\"\n        },\n        {\n            \"strDrink\": \"Amaretto Stinger\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vvop4w1493069934.jpg\",\n            \"idDrink\": \"11028\"\n        },\n        {\n            \"strDrink\": \"Amaretto Stone Sour\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/xwryyx1472719921.jpg\",\n            \"idDrink\": \"14306\"\n        },\n        {\n            \"strDrink\": \"Amaretto Stone Sour #3\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wutxqr1472720012.jpg\",\n            \"idDrink\": \"16100\"\n        },\n        {\n            \"strDrink\": \"Amaretto Sunrise\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/akcpsh1493070267.jpg\",\n            \"idDrink\": \"14578\"\n        },\n        {\n            \"strDrink\": \"Amaretto Sunset\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/apictz1493069760.jpg\",\n            \"idDrink\": \"17168\"\n        },\n        {\n            \"strDrink\": \"Amaretto Sweet & Sour\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vswwus1472668546.jpg\",\n            \"idDrink\": \"16202\"\n        },\n        {\n            \"strDrink\": \"Amaretto Tea\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/b7qzo21493070167.jpg\",\n            \"idDrink\": \"11029\"\n        },\n        {\n            \"strDrink\": \"Americano\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/trwruu1478253126.jpg\",\n            \"idDrink\": \"15941\"\n        },\n        {\n            \"strDrink\": \"Angel Face\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/vqpptp1478253178.jpg\",\n            \"idDrink\": \"11034\"\n        },\n        {\n            \"strDrink\": \"Angelica Liqueur\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/yuurps1472667672.jpg\",\n            \"idDrink\": \"12794\"\n        },\n        {\n            \"strDrink\": \"Aperol Spritz\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/iloasq1587661955.jpg\",\n            \"idDrink\": \"178325\"\n        },\n        {\n            \"strDrink\": \"Apple Grande\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wqrptx1472668622.jpg\",\n            \"idDrink\": \"16289\"\n        },\n        {\n            \"strDrink\": \"Apple Pie with A Crust\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/qspqxt1472720078.jpg\",\n            \"idDrink\": \"16958\"\n        },\n        {\n            \"strDrink\": \"Apple Slammer\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/09yd5f1493069852.jpg\",\n            \"idDrink\": \"13683\"\n        },\n        {\n            \"strDrink\": \"Applecar\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/sbffau1504389764.jpg\",\n            \"idDrink\": \"11046\"\n        },\n        {\n            \"strDrink\": \"Applejack\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/sutyqp1479209062.jpg\",\n            \"idDrink\": \"16311\"\n        },\n        {\n            \"strDrink\": \"Apricot Lady\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/7ityp11582579598.jpg\",\n            \"idDrink\": \"11050\"\n        },\n        {\n            \"strDrink\": \"Apricot punch\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/tuxxtp1472668667.jpg\",\n            \"idDrink\": \"15849\"\n        },\n        {\n            \"strDrink\": \"Aquamarine\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/zvsre31572902738.jpg\",\n            \"idDrink\": \"178319\"\n        },\n        {\n            \"strDrink\": \"Archbishop\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/4g6xds1582579703.jpg\",\n            \"idDrink\": \"11052\"\n        },\n        {\n            \"strDrink\": \"Arctic Fish\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/ttsvwy1472668781.jpg\",\n            \"idDrink\": \"14622\"\n        },\n        {\n            \"strDrink\": \"Arctic Mouthwash\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wqstwv1478963735.jpg\",\n            \"idDrink\": \"17118\"\n        },\n        {\n            \"strDrink\": \"Arise My Love\",\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/wyrrwv1441207432.jpg\",\n            \"idDrink\": \"11053\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetIngredientsById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-rapidapi-host",
+						"value": "the-cocktail-db.p.rapidapi.com",
+						"type": "text"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://the-cocktail-db.p.rapidapi.com/lookup.php?iid=552",
+					"protocol": "https",
+					"host": [
+						"the-cocktail-db",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"lookup.php"
+					],
+					"query": [
+						{
+							"key": "iid",
+							"value": "552"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetIngredientsByIdResponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-rapidapi-host",
+								"value": "the-cocktail-db.p.rapidapi.com",
+								"type": "text"
+							},
+							{
+								"key": "x-rapidapi-key",
+								"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://the-cocktail-db.p.rapidapi.com/lookup.php?iid=552",
+							"protocol": "https",
+							"host": [
+								"the-cocktail-db",
+								"p",
+								"rapidapi",
+								"com"
+							],
+							"path": [
+								"lookup.php"
+							],
+							"query": [
+								{
+									"key": "iid",
+									"value": "552"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "5a3054e3281c73d9-IAD"
+						},
+						{
+							"key": "cf-request-id",
+							"value": "03521361fd000073d913ba4200000001"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jun 2020 01:38:24 GMT"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "RapidAPI-1.1.13"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cfduid=da4c2c7f76959c25a99bc8b0aaff3a9a61592098703; expires=Tue, 14-Jul-20 01:38:23 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; SameSite=Lax; Secure"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.0.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-RapidAPI-Region",
+							"value": "AWS - us-east-1"
+						},
+						{
+							"key": "X-RapidAPI-Version",
+							"value": "1.1.13"
+						},
+						{
+							"key": "Content-Length",
+							"value": "218"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"ingredients\": [\n        {\n            \"idIngredient\": \"552\",\n            \"strIngredient\": \"Elderflower cordial\",\n            \"strDescription\": \"Elderflower cordial is a soft drink made largely from a refined sugar and water solution and uses the flowers of the European elderberry. Historically the cordial has been popular in North Western Europe where it has a strong Victorian heritage.\",\n            \"strType\": \"Cordial\",\n            \"strAlcohol\": null,\n            \"strABV\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetRandomIngredient",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-rapidapi-host",
+						"value": "the-cocktail-db.p.rapidapi.com",
+						"type": "text"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://the-cocktail-db.p.rapidapi.com/random.php",
+					"protocol": "https",
+					"host": [
+						"the-cocktail-db",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"random.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetRandomIngredientResponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-rapidapi-host",
+								"value": "the-cocktail-db.p.rapidapi.com",
+								"type": "text"
+							},
+							{
+								"key": "x-rapidapi-key",
+								"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://the-cocktail-db.p.rapidapi.com/random.php",
+							"protocol": "https",
+							"host": [
+								"the-cocktail-db",
+								"p",
+								"rapidapi",
+								"com"
+							],
+							"path": [
+								"random.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "5a305475ac84cedc-IAD"
+						},
+						{
+							"key": "cf-request-id",
+							"value": "0352131d8c0000cedcf3176200000001"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jun 2020 01:38:06 GMT"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "RapidAPI-1.1.13"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cfduid=d81ee9e96ad48351bc06e8e12c69a3df81592098686; expires=Tue, 14-Jul-20 01:38:06 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; SameSite=Lax; Secure"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.0.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-RapidAPI-Region",
+							"value": "AWS - us-east-1"
+						},
+						{
+							"key": "X-RapidAPI-Version",
+							"value": "1.1.13"
+						},
+						{
+							"key": "Content-Length",
+							"value": "469"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"drinks\": [\n        {\n            \"idDrink\": \"15515\",\n            \"strDrink\": \"Tennesee Mud\",\n            \"strDrinkAlternate\": null,\n            \"strDrinkES\": null,\n            \"strDrinkDE\": null,\n            \"strDrinkFR\": null,\n            \"strDrinkZH-HANS\": null,\n            \"strDrinkZH-HANT\": null,\n            \"strTags\": null,\n            \"strVideo\": null,\n            \"strCategory\": \"Coffee / Tea\",\n            \"strIBA\": null,\n            \"strAlcoholic\": \"Alcoholic\",\n            \"strGlass\": \"Coffee Mug\",\n            \"strInstructions\": \"Mix Coffee, Jack Daniels and Amaretto. Add Cream on top.\",\n            \"strInstructionsES\": null,\n            \"strInstructionsDE\": \"Mische Kaffee, Jack Daniels und Amaretto. Creme darauf geben.\",\n            \"strInstructionsFR\": null,\n            \"strInstructionsZH-HANS\": null,\n            \"strInstructionsZH-HANT\": null,\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/txruqv1441245770.jpg\",\n            \"strIngredient1\": \"Coffee\",\n            \"strIngredient2\": \"Jack Daniels\",\n            \"strIngredient3\": \"Amaretto\",\n            \"strIngredient4\": \"Whipped cream\",\n            \"strIngredient5\": null,\n            \"strIngredient6\": null,\n            \"strIngredient7\": null,\n            \"strIngredient8\": null,\n            \"strIngredient9\": null,\n            \"strIngredient10\": null,\n            \"strIngredient11\": null,\n            \"strIngredient12\": null,\n            \"strIngredient13\": null,\n            \"strIngredient14\": null,\n            \"strIngredient15\": null,\n            \"strMeasure1\": \"8 oz \",\n            \"strMeasure2\": \"4 oz \",\n            \"strMeasure3\": \"4 oz \",\n            \"strMeasure4\": null,\n            \"strMeasure5\": null,\n            \"strMeasure6\": null,\n            \"strMeasure7\": null,\n            \"strMeasure8\": null,\n            \"strMeasure9\": null,\n            \"strMeasure10\": null,\n            \"strMeasure11\": null,\n            \"strMeasure12\": null,\n            \"strMeasure13\": null,\n            \"strMeasure14\": null,\n            \"strMeasure15\": null,\n            \"strCreativeCommonsConfirmed\": \"No\",\n            \"dateModified\": \"2015-09-03 03:02:50\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetCocktailDetails",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-rapidapi-host",
+						"value": "the-cocktail-db.p.rapidapi.com",
+						"type": "text"
+					},
+					{
+						"key": "x-rapidapi-key",
+						"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://the-cocktail-db.p.rapidapi.com/lookup.php?i=11007",
+					"protocol": "https",
+					"host": [
+						"the-cocktail-db",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"lookup.php"
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "11007"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetCocktailDetailsResponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-rapidapi-host",
+								"value": "the-cocktail-db.p.rapidapi.com",
+								"type": "text"
+							},
+							{
+								"key": "x-rapidapi-key",
+								"value": "a82156eb53msh83ccd3c830f58f5p10d463jsn6c5c06889085",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://the-cocktail-db.p.rapidapi.com/lookup.php?i=11007",
+							"protocol": "https",
+							"host": [
+								"the-cocktail-db",
+								"p",
+								"rapidapi",
+								"com"
+							],
+							"path": [
+								"lookup.php"
+							],
+							"query": [
+								{
+									"key": "i",
+									"value": "11007"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "5a3055240d44ea28-IAD"
+						},
+						{
+							"key": "cf-request-id",
+							"value": "0352138a810000ea28de271200000001"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jun 2020 01:38:34 GMT"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "RapidAPI-1.1.13"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cfduid=db6f34b8a33569790b90818f099e6a9741592098714; expires=Tue, 14-Jul-20 01:38:34 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; SameSite=Lax; Secure"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.0.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-RapidAPI-Region",
+							"value": "AWS - us-east-1"
+						},
+						{
+							"key": "X-RapidAPI-Version",
+							"value": "1.1.13"
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"drinks\": [\n        {\n            \"idDrink\": \"11007\",\n            \"strDrink\": \"Margarita\",\n            \"strDrinkAlternate\": null,\n            \"strDrinkES\": null,\n            \"strDrinkDE\": null,\n            \"strDrinkFR\": null,\n            \"strDrinkZH-HANS\": null,\n            \"strDrinkZH-HANT\": null,\n            \"strTags\": \"IBA,ContemporaryClassic\",\n            \"strVideo\": null,\n            \"strCategory\": \"Ordinary Drink\",\n            \"strIBA\": \"Contemporary Classics\",\n            \"strAlcoholic\": \"Alcoholic\",\n            \"strGlass\": \"Cocktail glass\",\n            \"strInstructions\": \"Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass.\",\n            \"strInstructionsES\": null,\n            \"strInstructionsDE\": \"Reiben Sie den Rand des Glases mit der Limettenscheibe, damit das Salz daran haftet. Achten Sie darauf, dass nur der äußere Rand angefeuchtet wird und streuen Sie das Salz darauf. Das Salz sollte sich auf den Lippen des Genießers befinden und niemals in den Cocktail einmischen. Die anderen Zutaten mit Eis schütteln und vorsichtig in das Glas geben.\",\n            \"strInstructionsFR\": null,\n            \"strInstructionsZH-HANS\": null,\n            \"strInstructionsZH-HANT\": null,\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg\",\n            \"strIngredient1\": \"Tequila\",\n            \"strIngredient2\": \"Triple sec\",\n            \"strIngredient3\": \"Lime juice\",\n            \"strIngredient4\": \"Salt\",\n            \"strIngredient5\": null,\n            \"strIngredient6\": null,\n            \"strIngredient7\": null,\n            \"strIngredient8\": null,\n            \"strIngredient9\": null,\n            \"strIngredient10\": null,\n            \"strIngredient11\": null,\n            \"strIngredient12\": null,\n            \"strIngredient13\": null,\n            \"strIngredient14\": null,\n            \"strIngredient15\": null,\n            \"strMeasure1\": \"1 1/2 oz \",\n            \"strMeasure2\": \"1/2 oz \",\n            \"strMeasure3\": \"1 oz \",\n            \"strMeasure4\": null,\n            \"strMeasure5\": null,\n            \"strMeasure6\": null,\n            \"strMeasure7\": null,\n            \"strMeasure8\": null,\n            \"strMeasure9\": null,\n            \"strMeasure10\": null,\n            \"strMeasure11\": null,\n            \"strMeasure12\": null,\n            \"strMeasure13\": null,\n            \"strMeasure14\": null,\n            \"strMeasure15\": null,\n            \"strCreativeCommonsConfirmed\": \"Yes\",\n            \"dateModified\": \"2015-08-18 14:42:59\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
