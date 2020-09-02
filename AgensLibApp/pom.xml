@@ -1,0 +1,93 @@
+<project 
+	xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+  	<modelVersion>4.0.0</modelVersion>
+	<groupId>AgensLib</groupId>
+	<artifactId>AgensLib</artifactId>
+	<packaging>jar</packaging>
+	<version>0.0.1</version>
+	<name>AgensLib</name>
+	<url>http://maven.apache.org</url>
+
+ 	<properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    
+    <repositories>
+  		<repository>
+     		<id>tilab</id>
+     		<url>https://jade.tilab.com/maven/</url>
+  		</repository>
+	</repositories>
+	
+	<dependencies>
+		<!--  MAS dependencies -->
+        <dependency> <!-- Dependency for Jade framework -->
+       		<groupId>com.tilab.jade</groupId>
+       		<artifactId>jade</artifactId>
+       		<version>4.4.0</version>
+   		</dependency>
+   		<dependency> <!-- Dependency for use JSONObject -->
+   	 		<groupId>com.googlecode.json-simple</groupId>
+    		<artifactId>json-simple</artifactId>
+    		<version>1.1.1</version>
+		</dependency>
+   	</dependencies>
+  
+  	<build>
+    	<sourceDirectory>src</sourceDirectory>
+    	<plugins>
+	     	<plugin>
+	        	<artifactId>maven-compiler-plugin</artifactId>
+	        	<version>3.8.0</version>
+	       	 	<configuration>
+	          		<release>11</release>
+	        	</configuration>
+	      	</plugin>
+	      	<plugin>
+			    <groupId>io.github.fvarrui</groupId>
+			    <artifactId>javapackager</artifactId>
+			    <version>1.1.0</version>
+			    <executions>
+			        <execution>
+			            <phase>package</phase>
+			            <goals>
+			                <goal>package</goal>
+			            </goals>
+			            <configuration>
+			                <!-- mandatory -->
+			                <mainClass>com.navi.agenslib.AgensLib</mainClass>
+			                <!-- optional -->
+			                <bundleJre>true</bundleJre>
+			                <generateInstaller>true</generateInstaller>        
+			                <administratorRequired>false</administratorRequired>
+			                <platform>mac</platform>
+			                <!-- 
+			                <iconFile>assets/windows/AgensLib.ico</iconFile>
+			                <winConfig>
+								<generateSetup>true</generateSetup>
+							</winConfig>
+			                <iconFile>assets/windows/AgensLib.png</iconFile>
+			                <linuxConfig>
+			                	<generateDeb>true</generateDeb>
+								<generateRpm>false</generateRpm>
+							</linuxConfig>
+							-->
+							<iconFile>assets/mac/AgensLib.icns</iconFile>
+							<macConfig>
+			               		<generateDmg>false</generateDmg>
+							    <generatePkg>false</generatePkg>
+							    <volumeIcon>assets/mac/AgensLib.icns</volumeIcon>
+								<volumeName>${displayName}</volumeName>
+							</macConfig>
+						</configuration>
+			        </execution>
+			    </executions>
+			</plugin>
+    	</plugins>
+ 	</build>
+</project>
